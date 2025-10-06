@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
-import { Users, Award, Clock, MapPin } from 'lucide-react';
+import { Users, FileText, Play, BookOpen } from 'lucide-react';
 
 interface Stat {
   icon: React.ElementType;
@@ -13,26 +13,26 @@ interface Stat {
 const stats: Stat[] = [
   {
     icon: Users,
-    value: 15000,
-    label: 'Students Trained',
-    suffix: '+'
+    value: 4000,
+    label: 'Happy Students',
+    suffix: ''
   },
   {
-    icon: Award,
-    value: 10000,
-    label: 'Top Selections',
-    suffix: '+'
+    icon: FileText,
+    value: 18000,
+    label: 'Mock Tests',
+    suffix: ''
   },
   {
-    icon: Clock,
-    value: 25,
-    label: 'Years of Excellence',
-    suffix: '+'
+    icon: Play,
+    value: 800,
+    label: 'Video Lectures',
+    suffix: ''
   },
   {
-    icon: MapPin,
-    value: 5,
-    label: 'Centers in North India',
+    icon: BookOpen,
+    value: 3000,
+    label: 'Practice Papers',
     suffix: ''
   }
 ];

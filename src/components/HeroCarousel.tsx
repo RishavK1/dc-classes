@@ -18,28 +18,28 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: '/hero/campus-main.jpg',
+    image: '/hero/hero1.webp',
     title: 'A Name of Trust Since 1999',
     subtitle: 'CBSE, JEE, NEET, NDA, IAS/IPS & More. Proven Results. Expert Faculty. Personal Mentoring.',
     cta1: 'Book Free Counselling',
     cta2: 'Call Now'
   },
   {
-    image: '/hero/results-celebration.jpg',
+    image: '/hero/hero2.webp',
     title: 'Results That Speak',
     subtitle: '25+ Years of Excellence. 10,000+ Selections. Your Success is Our Mission.',
     cta1: 'View Our Toppers',
     cta2: 'Talk to Counsellor'
   },
   {
-    image: '/hero/classroom-teaching.jpg',
+    image: '/hero/hero3.webp',
     title: 'Expert Faculty. Modern Infrastructure',
     subtitle: 'IIT/AIIMS Alumni. State-of-the-art Classrooms. Comprehensive Study Material.',
     cta1: 'Explore Courses',
     cta2: 'Join Demo Class'
   },
   {
-    image: '/hero/admission-open.jpg',
+    image: '/hero/hero4.webp',
     title: 'New Batch Admissions Open!',
     subtitle: 'Limited Seats. Early Bird Discounts. Scholarship Available for Meritorious Students.',
     cta1: 'Apply Now',

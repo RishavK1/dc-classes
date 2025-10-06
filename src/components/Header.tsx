@@ -13,15 +13,16 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const courses = [
-  { name: 'CBSE VI-X', href: '/courses/cbse-foundation' },
-  { name: 'CBSE XI-XII', href: '/courses/cbse-11-12' },
-  { name: 'JEE Preparation', href: '/courses/jee-preparation' },
-  { name: 'NEET Preparation', href: '/courses/neet-preparation' },
-  { name: 'NDA', href: '/courses/nda-preparation' },
-  { name: 'IAS/IPS', href: '/courses/ias-ips-preparation' },
-  { name: 'CLAT', href: '/courses/clat-preparation' },
+  { name: 'IX, X (All Subjects)', href: '/courses/ix-x-all-subjects' },
+  { name: 'XI, XII (CBSE)', href: '/courses/xi-xii-cbse' },
+  { name: 'IIT-JEE', href: '/courses/iit-jee' },
   { name: 'SAT', href: '/courses/sat-preparation' },
+  { name: 'CLAT', href: '/courses/clat-preparation' },
+  { name: 'IPM', href: '/courses/ipm-preparation' },
+  { name: 'IAS/IPS/HCS', href: '/courses/ias-ips-hcs' },
+  { name: 'CUET', href: '/courses/cuet-preparation' },
   { name: 'IELTS', href: '/courses/ielts-preparation' },
+  { name: 'Study Visas', href: '/courses/study-visas' },
 ];
 
 export default function Header() {
@@ -63,9 +64,11 @@ export default function Header() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-xl">DC</span>
-              </div>
+              <img 
+                src="/hero/dc-logo1.webp" 
+                alt="DC Classes Logo" 
+                className="w-12 h-12 mr-3 object-contain"
+              />
               <div>
                 <div className="font-bold text-xl text-primary">DC Classes</div>
                 <div className="text-xs text-muted-foreground">Since 1999</div>
@@ -86,7 +89,7 @@ export default function Header() {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Courses</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="grid w-[600px] grid-cols-2 gap-3 p-4">
+                      <div className="grid w-[700px] grid-cols-2 gap-3 p-4">
                         {courses.map((course) => (
                           <NavigationMenuLink key={course.href} asChild>
                             <Link
